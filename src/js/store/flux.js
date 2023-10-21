@@ -29,7 +29,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			// ${method === "PUT" ? objContact.id : ""}
 			uploadContact: (objContact) => {
-				fetch(`https://playground.4geeks.com/apis/fake/contact/biancas`, {
+				fetch(`https://playground.4geeks.com/apis/fake/contact`, {
 					method: "POST",
 					headers: {
 						"Content-Type": "application/json"

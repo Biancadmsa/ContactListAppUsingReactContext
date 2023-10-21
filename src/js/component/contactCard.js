@@ -24,9 +24,9 @@ const ContactCard = (props) => {
             </div>
             <div className="rightIcons">
                 <Link to={"/edit/" + props.idx}>
-                    <button><i className="fa-solid fa-pencil"></i></button>
+                    {/* <button><i className="fa-solid fa-pencil"></i></button> */}
                 </Link>
-                <button onClick={() => props.deleteContact(props.contactID)}><i className="fa-solid fa-trash-can"></i></button>
+                <button onClick={() => props.deleteContact(props.contactID)}><i className="fa-solid fa-trash-can fa-2x"></i></button>
             </div>
         </div>
     )
