@@ -60,7 +60,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 			deleteContact: (id) => {
 				console.log("deleteID", id)
-				fetch(`https://playground.4geeks.com/apis/fake/contact/${id}`, {
+				fetch(`https://playground.4geeks.com/apis/fake/contact/agenda/biancas`, {
 					method: "DELETE",
 					headers: {
 						"Content-Type": "application/json"

@@ -23,10 +23,14 @@ const ContactCard = (props) => {
                 </div>
             </div>
             <div className="rightIcons">
-                <Link to={"/edit/" + props.idx}>
-                    {/* <button><i className="fa-solid fa-pencil"></i></button> */}
-                </Link>
-                <button onClick={() => props.deleteContact(props.contactID)}><i className="fa-solid fa-trash-can fa-2x"></i></button>
+               <Link to={"/edit/" + props.idx}>
+    <button className="btn btn-outline-black">
+        <i className="fa-solid fa-pencil"></i>
+    </button>
+</Link>
+
+                <button onClick={() => props.deleteContact(props.contactID)}  className="btn btn-outline-black" ><i className="fa-solid fa-trash-can fa-1x"></i></button>
+
             </div>
         </div>
     )
